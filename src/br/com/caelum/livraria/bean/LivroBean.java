@@ -2,15 +2,17 @@ package br.com.caelum.livraria.bean;
 
 import java.util.List;
 
-import javax.enterprise.inject.Model;
+import javax.faces.bean.RequestScoped;
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import br.com.caelum.livraria.dao.AutorDao;
 import br.com.caelum.livraria.dao.LivroDao;
 import br.com.caelum.livraria.modelo.Autor;
 import br.com.caelum.livraria.modelo.Livro;
 
-@Model
+@Named
+@RequestScoped
 public class LivroBean {
 	
 	private Livro livro = new Livro();
