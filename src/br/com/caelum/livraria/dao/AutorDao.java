@@ -21,9 +21,7 @@ public class AutorDao {
 	}
 
 	public void salva(Autor autor) {
-		System.out.println("[INFO] Salvando o Autor " + autor.getNome());
 		manager.persist(autor);
-		System.out.println("[INFO] Salvou o Autor " + autor.getNome());
 	}
 
 	public List<Autor> todosAutores() {
